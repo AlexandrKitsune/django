@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% extends 'flatpages/default.html' %}
+    {% block title %}
+    {{ flatpage.title }}
+    {% endblock title %}
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <title>{{ flatpage.title }}</title>
+</head>
+<body>
+{% block content %}
+<i>
+    <p style="font-size:400%">{{ flatpage.content }}</p>
+</i>
+{% endblock content %}
+</body>
+</html>
